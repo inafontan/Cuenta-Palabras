@@ -1,23 +1,27 @@
-import React, {useState} from 'react';
+// App.js
+import React from 'react';
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import './App.css';
+import WordCounter from './WordCounter';
+import LetterCounter from './LetterCounter';
+import Home from './Home';
 
-function App() {
-    const [text, setText] = useState('');
-    const wordCount = text.trim().split(/\s+/).length;
-
-    const handleChange = (event) => {
-        setText(event.target.value);
-    };
-
+const App = () => {
     return (
-        <div className="App">
-            <h1>Word Counter App</h1>
-            <textarea placeholder="Escribe o pega tu texto aquí..."
-                value={text}
-                onChange={handleChange}/>
-            <p>Total de palabras: {wordCount}</p>
-        </div>
+        <Router>
+            <div className="App">
+                    <Link to="/">Inicio</Link>
+                <Routes>
+                    <Route path="/"
+                        element={<Home/>}/>
+                    <Route path="/word-counter"
+                        element={<WordCounter/>}/>
+                    <Route path="/letter-counter"
+                        element={<LetterCounter/>}/>
+                </Routes>
+            </div>
+        </Router>
     );
-}
+};
 
 export default App;
