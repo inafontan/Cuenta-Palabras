@@ -10,12 +10,12 @@ function App() {
     };
 
     return (
-        <div className="App">
+        <div className='palabras'>
             <h1>Contador de Palabras</h1>
             <textarea placeholder="Escribe o pega tu texto aquí..."
                 value={text}
                 onChange={handleChange}/>
-            <p>Total de palabras: {wordCount}</p>
+            <p className='total'>Total de palabras: {wordCount}</p>
         </div>
     );
 }

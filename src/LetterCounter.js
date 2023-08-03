@@ -10,12 +10,12 @@ const LetterCounter = () => {
     };
 
     return (
-        <div>
+        <div className='palabras'>
             <h1>Contador de Letras</h1>
             <textarea placeholder="Escribe o pega tu texto aquí..."
                 value={text}
                 onChange={handleChange}/>
-            <p>Total de letras: {letterCount}</p>
+            <p className='total'>Total de letras: {letterCount}</p>
         </div>
     );
 };
