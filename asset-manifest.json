@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CuentaPalabras/static/css/main.b392419b.css",
+    "main.js": "/CuentaPalabras/static/js/main.aa26d108.js",
+    "static/js/787.69f03984.chunk.js": "/CuentaPalabras/static/js/787.69f03984.chunk.js",
+    "index.html": "/CuentaPalabras/index.html",
+    "main.b392419b.css.map": "/CuentaPalabras/static/css/main.b392419b.css.map",
+    "main.aa26d108.js.map": "/CuentaPalabras/static/js/main.aa26d108.js.map",
+    "787.69f03984.chunk.js.map": "/CuentaPalabras/static/js/787.69f03984.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b392419b.css",
+    "static/js/main.aa26d108.js"
+  ]
+}
